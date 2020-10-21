@@ -1,8 +1,23 @@
 /****  Global Style  ****/
+body{
+    margin: 0;
+    padding: 0
+}
 .content-wrap{
     width: 850px;
     margin: 0 auto;
 }
 /****  Header Style ****/
-
+header{
+    padding: 15px;
+    background: black;
+    color: white;
+    nav {
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
 /****  Footer Style ****/
