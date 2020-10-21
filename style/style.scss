@@ -7,6 +7,14 @@ body{
     width: 850px;
     margin: 0 auto;
 }
+@mixin btnStyle {
+    width: 300px;
+    background: yellow;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
 /****  Header Style ****/
 header{
     padding: 15px;
@@ -20,4 +28,28 @@ header{
         }
     }
 }
+/**** Content Section ****/ 
+.main-content{
+    background: #F4F6F7 ;
+    padding: 30px;
+    h1{
+        text-align: center;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    button{
+        @include btnStyle;
+    }
+}
+
 /****  Footer Style ****/
+footer {
+    text-align: center;
+    background: #58D68D;
+    padding: 25px;
+    button {
+        @include btnStyle;
+    }
+}
